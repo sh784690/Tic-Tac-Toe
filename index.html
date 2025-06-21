@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+<div class="controls">
+  <label>
+    Mode :
+    <select id="mode">
+      <option value="single">Computer</option>
+      <option value="multi">2 player</option>
+    </select>
+  </label>
+  <label id="difficulty-wrapper">
+    Difficulty :
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard" selected>Hard</option>
+    </select>
+  </label>
+</div>
+
+<div class="board" id="board"></div>
+<div class="message" id="message"></div>
+<button id="restart">🔄 Restart</button>
+  
+<audio id="click-sound" src="sounds/click.mp3"></audio>
+<audio id="win-sound" src="sounds/win.mp3"></audio>
+<audio id="draw-sound" src="sounds/draw.mp3"></audio>
+  
+<audio id="bg-sound" src="sounds/game-music.mp3" loop autoplay></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
 
